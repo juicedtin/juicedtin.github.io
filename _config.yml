@@ -106,6 +106,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  #_bme66
+  - scope:
+      path = "_bme66"
+      type:bme66
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 category_archive:
   type: liquid
@@ -113,3 +121,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+#Collections
+collections:
+  bme66:
+    output: true
+    permalink: /collection/:path/
