@@ -16,7 +16,7 @@ Before this class started, I heard a lot about Github Pages websites being used 
 
 ### Github Pages <a name = "GithubPages"></a>
 
-GitHub Pages is what I used to host my website - but it's a little weird in how its set up initially. I found the official [Github Pages](https://docs.github.com/en/pages)and [Jekyll](https://jekyllrb.com/docs/) documentation very useful for answering questions and setting up the website. I've also used a popular theme from the Github community known as [Minimal Mistakes]("https://github.com/mmistakes/minimal-mistakes") for the general theming and heavy-duty HTML/CSS for the overall site layout. After forking the above repository, I have something that looks a little like this: 
+GitHub Pages is what I used to host my website - but it's a little weird in how its set up initially. I found the official [Github Pages](https://docs.github.com/en/pages)and [Jekyll](https://jekyllrb.com/docs/) documentation very useful for answering questions and setting up the website. I've also used a popular theme from the Github community known as [Minimal Mistakes]("https://github.com/mmistakes/minimal-mistakes") for the general theming and heavy-duty HTML/CSS for the overall site layout. Minimal Mistakes also creates a bunch of default layouts, which are really nice to use so I don't have to spend time making my own. After forking the above repository, I have something that looks a little like this: 
 <center>
 <image src="assets\images\P1\GithubRepo.jpg" alt="Screenshot of Github repo path structure"/>
 </center>
