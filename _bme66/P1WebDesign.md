@@ -16,9 +16,9 @@ Before this class started, I heard a lot about Github Pages websites being used 
 
 ### Github Pages <a name = "GithubPages"></a>
 
-GitHub Pages is what I used to host my website - but it's a little weird in how its set up initially. I found the official [Github Pages](https://docs.github.com/en/pages)and [Jekyll](https://jekyllrb.com/docs/) documentation very useful for answering questions and setting up the website. I've also used a popular theme from the Github community known as [Minimal Mistakes]("https://github.com/mmistakes/minimal-mistakes") for the general theming and heavy-duty HTML/CSS for the overall site layout. Minimal Mistakes also creates a bunch of default layouts, which are really nice to use so I don't have to spend time making my own. After forking the above repository, I have something that looks a little like this: 
+GitHub Pages is what I used to host my website - but it's a little weird in how its set up initially. I found the official [Github Pages](https://docs.github.com/en/pages) and [Jekyll](https://jekyllrb.com/docs/) documentation very useful for answering questions and setting up the website. I've also used a popular theme from the Github community known as [Minimal Mistakes]("https://github.com/mmistakes/minimal-mistakes") for the general theming and heavy-duty HTML/CSS for the overall site layout. Minimal Mistakes also creates a bunch of default layouts, which are really nice to use so I don't have to spend time making my own. After forking the above repository, I have something that looks a little like this: 
 <center>
-<image src="assets\images\P1\GithubRepo.jpg" alt="Screenshot of Github repo path structure"/>
+<image src="assets/images/P1/GithubRepo.png" alt="Screenshot of Github repo path structure"/>
 </center>
 \_config.yml is especially important here to setup subpages, as I decided to group all of my future assignments into a "Collection" rather than separate pages. Thus, I added a folder \_bme66 to my website assets and defined it in a collection:
 
@@ -48,7 +48,7 @@ I actually had a lot of problems with this section, as the setup of collections 
 
 Go figure. From now on, I think I should definitely keep a better eye on that syntax, especially as I make these files longer and longer for my future homeworks!
 
-Anyway... now 
+Anyway... now that we have a collection set up, 
 
 ### Markdown <a name="Markdown"/></a>
 
