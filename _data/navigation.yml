@@ -2,11 +2,5 @@ main:
   - title: "BME66"
     url: /bme66/
     description: "BME66 Documentation and Design"
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
