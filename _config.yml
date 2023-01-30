@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Justin Wang Tufts BME '24
+title: Justin Wang &#124; Design Portfolio
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Engineering design portfolio for Justin Wang, Tufts BME Class of 2024.

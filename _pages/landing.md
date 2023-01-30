@@ -1,7 +1,7 @@
 ---
-title: "Design Portfolio &#124; Justin Wang"
-permalink: /
 layout: splash
+permalink: /
+hidden: true
 header: 
     overlay_image: /assets/images/Landing.png
     caption: "Photo credit: [**SouredApple**](https://twitter.com/SouredApple)"
