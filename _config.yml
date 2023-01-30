@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Justin Wang &#124; Design Portfolio
-email:
+email: jwang52@tufts.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Engineering design portfolio for Justin Wang, Tufts BME Class of 2024.
   Includes class records for BME66, Engineering Design Process. 
@@ -30,7 +30,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: US
 
 include:
   - _pages
