@@ -18,7 +18,7 @@ ramblingfeature:
     alt: "Random XKCD comic image header for rambling feature category"
     title: "Random Ramblings"
     excerpt: "Not exactly sure what this is going to turn into as of this website setup, but hopefully something cool will be dropped in here at some point..."
-  ---
+---
 
   {% include feature_row id="descrip" type="center" %}
   {% include feature_row id="bme66feature" type = "left" %}
