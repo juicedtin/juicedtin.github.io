@@ -43,7 +43,7 @@ with the following default definitions
 ~~~
 Here, the various values define various things about the category (and all the pages that will be going into it). Firstly, a `path` denotes that the Jekyll engine should process all the pages in the folder (yup, we want that). `type` is simply a designation to match the previously-defined collection. 
 
-_Note that during this process, I've found that some markdown items weren't rendering correctly in VSCode - so I tested the site rendering on localhost:4000 until I could get it right using the methods in [Integrating Things Together](#Integrate)_
+_Note that during this process, I've found that some markdown items weren't rendering correctly in VSCode - so I tested the site rendering on localhost:4000 until I could get it right using the methods in [Integrating Things Together](#integrating-things-together)_
 
 I actually had a lot of problems with this section, as the setup of collections is very specific - if you get something wrong, Jekyll gets angry and doesn't render the website as you expect. It turns out that my website wasn't compiling because I accidentally used an `=` instead of an `:` in the config file. 
 
