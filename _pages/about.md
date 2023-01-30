@@ -1,8 +1,10 @@
 ---
 permalink: /about/
 title: "About"
+author_profile: true
+classes: wide
 ---
+_(MEDIA REMODEL PENDING)_
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Hi! My name is Justin Wang and I'm majoring in Biomedical Engineering at Tufts University - Class of 2024. I was born and raised in San Diego, California (although I like Boston better, don't tell my parents), and I went to high school at Canyon Crest Academy in Del Mar. I'm currently working in the Kaplan and Timko Labs, on silk biomaterial fabrication and silicon nanowire fabrication. 
+In my free time, I enjoy writing/worldbuilding (I play DnD with an old friend group and I like daydreaming) and gaming - VALORANT, League, Destiny are the current highlights. I'm also a casual-ish anime watcher, although I usually use my friends for recommendations: my favorites are _Cyberpunk Edgerunners_, _Steins:Gate_, _Code Geass_, _86_, and I'm working my way through _Psycho Pass_ as of early 2023. Feel free to contact me at any of the various contacts scattered throughout this website, I'm always happy to talk about research, sci-fi, or anything in between!
