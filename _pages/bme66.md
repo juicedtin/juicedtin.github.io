@@ -1,5 +1,5 @@
 ---
-title: "BME66 Design Course"
+title: "BME66: Engineering Design"
 layout: collection
 permalink: /bme66/
 collection: bme66
