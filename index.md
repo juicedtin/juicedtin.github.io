@@ -12,6 +12,7 @@ bme66feature:
   - image_path: assets/images/BME66.jpg
     alt: "BME66 image header for BME66 feature category."
     title: "BME66 &#124; Engineering Design"
+    url: "/bme66/"
     excerpt: "Here is linked all of my assignments, designs, and project updates for BME66 Engineering Design"
 ramblingfeature:
   - image_path: assets/images/xkcd.png
