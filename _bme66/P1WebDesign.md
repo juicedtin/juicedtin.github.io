@@ -7,17 +7,17 @@ sidebar:
 - title: Relevant Topics
   text:  Jekyll, Github Pages, Git version control, Markdown, HTML/CSS
 ---
-- [Introduction ](#introduction-)
-- [Github Pages ](#github-pages-)
-- [Markdown ](#markdown-)
-- [Integrating Things Together ](#integrating-things-together-)
+- [Introduction](#Introduction)
+- [Github Pages](#github-pages)
+- [Markdown](#markdown)
+- [Integrating Things Together](#integrating-things-together)
 - [Postscript Update 1](#postscript-update-1-making-a-splash-homepage)
 
-## Introduction <a name="Introduction"></a>
+## Introduction
 
 Before this class started, I heard a lot about Github Pages websites being used by other majors for portfolios and such - and now that BME66 has given me an excuse to create a website of my own, I've taken it upon myself to dive deep into the horrors of Ruby, Jekyll, HTML/CSS/SASS, and everything in between. For those who would like to follow this same path, I'm documenting everything I've done - hope it helps!image.png
 
-## Github Pages <a name = "GithubPages"></a>
+## Github Pages
 
 GitHub Pages is what I used to host my website - but it's a little weird in how its initially set up. I found the official [Github Pages](https://docs.github.com/en/pages) and [Jekyll](https://jekyllrb.com/docs/) documentation very useful for answering questions and setting up the website. I've also used a popular theme from the Github community known as [Minimal Mistakes]("https://github.com/mmistakes/minimal-mistakes") for the general theming and heavy-duty HTML/CSS for the overall site layout. Minimal Mistakes also creates a bunch of default layouts, which are really nice to use so I don't have to spend time making my own. After forking the above repository, I have something that looks a little like this: 
 ![Screenshot of Github repo](/assets/images/P1/GithubRepo.png)
@@ -70,7 +70,7 @@ This creates a landing page at the BME66 permalink, that had a grid layout to la
 ~~~
 Now, to write my first post!
 
-## Markdown <a name="Markdown"></a>
+## Markdown
 
 First order of business - this page is written in Markdown, which is a really awesome, lightweight markup language that lets me make cool things like table of contents, etc. Because of the way the file structure works as I mentioned in the prior section, I can simply point my Markdown editor to `_bme66` and go crazy.
 Now in this folder, I can write all my assignments in <a href="https://www.markdownguide.org/basic-syntax/">Markdown</a>, using the syntax shown at the link. I had some problems initially learning the syntax, but I haven't documeted those issues here as I deemed that they weren't universalizable to those looking to replicate my process. If you would like to see the raw Markdown code (for those of you in my BME66 class, feel free to email me at my Tufts email). 
@@ -81,7 +81,7 @@ Although it's a little low-tech, I just used VSCode with it's integrated `Cntrl+
 Note the `YAML` header at the top between the `---`. This denotes the title, excerpt, and sidebar settings according to the theme syntax, so that this post will show up correctly on the `/bme66/` landing page. 
 To get my title looking correct, I had to do some more Googling -  note the weird `&#124;` - this is HTML-speak to display special characters which includes pipes like "||". When I put a normal "||" character in my title, it showed up as blank. Similarly, anytime I want to use an underscore outside of "code mode" in Markdown, I have to follow it with a backslash: `\_` these are generally known as escape characters and are used frequently in markup languages.
 
-## Integrating Things Together <a name = "Integrate"></a>
+## Integrating Things Together
 
 Now, I can put my website up on the web so everybody else can ~~bask in it's beautiful glorious presence~~ get up-to-date on all of my BME66 projects (and anything else I decide to make). First off, I have to set up Pages on Github as so:
 ![Github Pages Settings](/assets/images/P1/PagesSettings.png)
