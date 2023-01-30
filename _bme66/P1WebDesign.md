@@ -11,6 +11,7 @@ sidebar:
 - [Github Pages ](#github-pages-)
 - [Markdown ](#markdown-)
 - [Integrating Things Together ](#integrating-things-together-)
+- [Postscript Update 1](#postscript-update-1-making-a-splash-homepage)
 
 ## Introduction <a name="Introduction"></a>
 
