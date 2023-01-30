@@ -15,10 +15,11 @@ bme66feature:
     url: "/bme66/"
     excerpt: "Here is linked all of my assignments, designs, and project updates for BME66 Engineering Design"
 ramblingfeature:
-  - image_path: assets/images/xkcd.png
+  - image_path: assets/images/xkcdSample.png
     alt: "Random XKCD comic image header for rambling feature category"
     title: "Random Ramblings"
-    excerpt: "Not exactly sure what this is going to turn into as of this website setup, but hopefully something cool will be dropped in here at some point..."
+    excerpt: "Photo credit: [**XKCD**](https://xkcd.com/2719/). <br />
+    Not exactly sure what this is going to turn into just yet, but hopefully something cool will be dropped in here at some point..."
 ---
 
   {% include feature_row id="descrip" type="center" %}
