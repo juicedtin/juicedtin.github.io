@@ -7,15 +7,15 @@ sidebar:
 - title: Relevant Topics
   text:  Jekyll, Github Pages, Git version control, Markdown, HTML/CSS
 ---
-- [Introduction](#Introduction)
+- [Introduction](#introduction)
 - [Github Pages](#github-pages)
 - [Markdown](#markdown)
 - [Integrating Things Together](#integrating-things-together)
-- [Postscript Update 1](#postscript-update-1-making-a-splash-homepage)
+- [Postscript Update 1: Making a Splash Homepage](#postscript-update-1-making-a-splash-homepage)
 
 ## Introduction
 
-Before this class started, I heard a lot about Github Pages websites being used by other majors for portfolios and such - and now that BME66 has given me an excuse to create a website of my own, I've taken it upon myself to dive deep into the horrors of Ruby, Jekyll, HTML/CSS/SASS, and everything in between. For those who would like to follow this same path, I'm documenting everything I've done - hope it helps!image.png
+Before this class started, I heard a lot about Github Pages websites being used by other majors for portfolios and such - and now that BME66 has given me an excuse to create a website of my own, I've taken it upon myself to dive deep into the horrors of Ruby, Jekyll, HTML/CSS/SASS, and everything in between. For those who would like to follow this same path, I'm documenting everything I've done - hope it helps!
 
 ## Github Pages
 
