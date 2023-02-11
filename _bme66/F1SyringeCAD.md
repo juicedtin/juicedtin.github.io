@@ -47,7 +47,7 @@ One part down, 3 more to go!
 To ensure that the syringe rests perfectly upright, I decided to make another rest similar to my first one, with slightly different dimensions. As shown in my measurements, the syringe barrel is actually slightly thinner than the top - so I adjusted the dimensioning of my sketches accordingly:
 
 | CAD Sketch |  3mm Extrude |
-:-------------------------:|:-------------------------:
+|:-------------------------:|:-------------------------:|
 ![Sketch for syringe guide](/assets/images/F1/Syringe%20Guide%20Sketch.png) | ![Extrude for syringe guide](/assets/images/F1/Syringe%20Guide%20Extrude.png)
 
 There's a simple syringe guide that I'll place a bit lower than the top plate in the final assembly. Annnd...that was the easy part.
@@ -66,8 +66,8 @@ In the Front plane, I sketched out this parallelogram-ish triangular shape:
 ![Sketch of the cutting shape as a pattern](/assets/images//F1/Mesh%20Pattern%20Sketch.png) that I then extruded into an extrude cut on the cylindrical surface of my shell. To make sure that I could get even spacing, I did a bit of math to dimension my pattern such that 7 repetitions of the pattern would perfectly space the patterns across the cylinder. Using the circpattern tool, I pattnered the parallleogram across the face of the cylinder, and then I used the linear pattern with a 4 mm offset (to preserve the 2 mm margins at the top and bottom of the cylinder) to extend this pattern down the shell. At the end, I had something like this:
 
 | Initial Extrude Cut | Final Shell Pattern |
-:---: | :---:
-![Extrude cut of the parallelogram into the cylinder](/assets/images/F1/CircPattern%20(After%20ExtrudeCut).png) | ![Final patterned tubular shell with triangular cutouts](/assets/images/F1/LinCirc%20Pattern.png)
+|:---: | :---:|
+|![Extrude cut of the parallelogram into the cylinder](/assets/images/F1/CircPattern%20(After%20ExtrudeCut).png) | ![Final patterned tubular shell with triangular cutouts](/assets/images/F1/LinCirc%20Pattern.png) |
 
 To put a place for the endcap I'm about to make, I also closed off the bottom of the cylinder with a 2mm cap:
 ![Cylindrical cap for conic end for mating](/assets/images/F1/CapCylinder.png)
@@ -80,13 +80,13 @@ First off, I created a "frustum-shell" that was designed to mesh with the origin
 
 To do the similar "weight-cutting" mechanism as previous, I decided to cut a pattern similar to the cylindrical shell, using the same mechanism:
 |Initial Cutting Pattern Sketch| Extrude Cut & 3X Circular Patterning |
-:---: | :--: 
-| ![Sketch of the cutting pattern for frustum shell](/assets/images/F1/RevolveConeExtrudeCutSketch.PNG)| ![Cut frustum shell after circular patterning](/assets/images/F1/CutCone.PNG)
+| :---: | :---: |
+| ![Sketch of the cutting pattern for frustum shell](/assets/images/F1/RevolveConeExtrudeCutSketch.PNG) | ![Cut frustum shell after circular patterning](/assets/images/F1/CutCone.PNG) |
 
 I still had concerns about the assembly collapsing under strain, so I decided to make one more support in the middle of the cone using the "loft" feature to build a mini-frustum. The dimensions of this part are also a little arbitrary, since I didn't have a good rationale for a calculation. The loft operation itself is made of two circles on different sketch planes, along with a line connecting them as a guide curve:
 |Support Frustum (Loft Operation) | Full Final Product |
-:---: | :--: 
-| ![Isometric view of the support after the loft operation](/assets/images/F1/ConeLoftSupport.PNG)| ![Final Conic Endcap](/assets/images/F1/FinalEndSupport.PNG)
+| :---: | :---: |
+| ![Isometric view of the support after the loft operation](/assets/images/F1/ConeLoftSupport.PNG)| ![Final Conic Endcap](/assets/images/F1/FinalEndSupport.PNG)|
 
 ## Assembly!
 Now that all of my parts have been made, it's quite simple to assemble them together. After importing all of my parts into a new SolidWorks "assembly", I "mated" them together primarily by using 3D coincident relations, which lined up two edges perfectly together as so:
