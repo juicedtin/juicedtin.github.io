@@ -94,3 +94,10 @@ Now that all of my parts have been made, it's quite simple to assemble them toge
 After doing this with all the parts (including the syringe guide, which I mated to one of my extrude cut patterns), the final product:
 ![Final Product](/assets/images/F1/Final.png)
 
+## Summary (Assignment Requirements)
+
+To summarize, I designed a scaffold to hold a 3-mL syringe in place within a 50 mL Falcon tube for centrifugation purposes. I used 4 separate part assemblies in SolidWorks, without any other necessary packages. It was most difficult to learn how to pattern extrude-cuts on the cylindrical surfaces as the way SolidWorks structured many of its patterning tools were not intuitive (much trial and error was required). As previously stated, I think much of my problems could be solved by learning how to move sketch plates without extruding. For example, the loft used as a central support in the conic endcap was made by extruding a cylinder to be able to sketch a larger circle on the top plane. I'm sure there is a method in SolidWorks to get around this extra extrusion step, but at the moment I wasn't able to find it.
+
+I've attached the SolidWorks assembly [here](https://drive.google.com/file/d/1_dsctThYayf49K04GnpHgq6YShHBpgCG/view?usp=share_link) for grading and/or access purposes.
+
+Thanks for reading!
