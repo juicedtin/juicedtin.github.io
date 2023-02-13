@@ -47,7 +47,7 @@ One part down, 3 more to go!
 To ensure that the syringe rests perfectly upright, I decided to make another rest similar to my first one, with slightly different dimensions. As shown in my measurements, the syringe barrel is actually slightly thinner than the top - so I adjusted the dimensioning of my sketches accordingly:
 
 | CAD Sketch |  3mm Extrude |
-:-------------------------:|:-------------------------:
+|:-------------------------:|:-------------------------:|
 ![Sketch for syringe guide](/assets/images/F1/Syringe%20Guide%20Sketch.png) | ![Extrude for syringe guide](/assets/images/F1/Syringe%20Guide%20Extrude.png)
 
 There's a simple syringe guide that I'll place a bit lower than the top plate in the final assembly. Annnd...that was the easy part.
@@ -66,8 +66,8 @@ In the Front plane, I sketched out this parallelogram-ish triangular shape:
 ![Sketch of the cutting shape as a pattern](/assets/images//F1/Mesh%20Pattern%20Sketch.png) that I then extruded into an extrude cut on the cylindrical surface of my shell. To make sure that I could get even spacing, I did a bit of math to dimension my pattern such that 7 repetitions of the pattern would perfectly space the patterns across the cylinder. Using the circpattern tool, I pattnered the parallleogram across the face of the cylinder, and then I used the linear pattern with a 4 mm offset (to preserve the 2 mm margins at the top and bottom of the cylinder) to extend this pattern down the shell. At the end, I had something like this:
 
 | Initial Extrude Cut | Final Shell Pattern |
-:---: | :---:
-![Extrude cut of the parallelogram into the cylinder](/assets/images/F1/CircPattern%20(After%20ExtrudeCut).png) | ![Final patterned tubular shell with triangular cutouts](/assets/images/F1/LinCirc%20Pattern.png)
+|:---: | :---:|
+|![Extrude cut of the parallelogram into the cylinder](/assets/images/F1/CircPattern%20(After%20ExtrudeCut).png) | ![Final patterned tubular shell with triangular cutouts](/assets/images/F1/LinCirc%20Pattern.png) |
 
 To put a place for the endcap I'm about to make, I also closed off the bottom of the cylinder with a 2mm cap:
 ![Cylindrical cap for conic end for mating](/assets/images/F1/CapCylinder.png)
@@ -85,7 +85,7 @@ To do the similar "weight-cutting" mechanism as previous, I decided to cut a pat
 
 I still had concerns about the assembly collapsing under strain, so I decided to make one more support in the middle of the cone using the "loft" feature to build a mini-frustum. The dimensions of this part are also a little arbitrary, since I didn't have a good rationale for a calculation. The loft operation itself is made of two circles on different sketch planes, along with a line connecting them as a guide curve:
 |Support Frustum (Loft Operation) | Full Final Product |
-:---: | :---: 
+:---: | :--: 
 | ![Isometric view of the support after the loft operation](/assets/images/F1/ConeLoftSupport.PNG)| ![Final Conic Endcap](/assets/images/F1/FinalEndSupport.PNG)
 
 ## Assembly!
@@ -94,3 +94,10 @@ Now that all of my parts have been made, it's quite simple to assemble them toge
 After doing this with all the parts (including the syringe guide, which I mated to one of my extrude cut patterns), the final product:
 ![Final Product](/assets/images/F1/Final.png)
 
+## Summary (Assignment Requirements)
+
+To summarize, I designed a scaffold to hold a 3-mL syringe in place within a 50 mL Falcon tube for centrifugation purposes. I used 4 separate part assemblies in SolidWorks, without any other necessary packages. It was most difficult to learn how to pattern extrude-cuts on the cylindrical surfaces as the way SolidWorks structured many of its patterning tools were not intuitive (much trial and error was required). As previously stated, I think much of my problems could be solved by learning how to move sketch plates without extruding. For example, the loft used as a central support in the conic endcap was made by extruding a cylinder to be able to sketch a larger circle on the top plane. I'm sure there is a method in SolidWorks to get around this extra extrusion step, but at the moment I wasn't able to find it.
+
+I've attached the SolidWorks assembly [here](https://drive.google.com/file/d/1_dsctThYayf49K04GnpHgq6YShHBpgCG/view?usp=share_link) for grading and/or access purposes.
+
+Thanks for reading!
