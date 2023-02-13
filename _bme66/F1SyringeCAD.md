@@ -80,12 +80,12 @@ First off, I created a "frustum-shell" that was designed to mesh with the origin
 
 To do the similar "weight-cutting" mechanism as previous, I decided to cut a pattern similar to the cylindrical shell, using the same mechanism:
 |Initial Cutting Pattern Sketch| Extrude Cut & 3X Circular Patterning |
-:---: | :--: 
+:---: | :---: 
 | ![Sketch of the cutting pattern for frustum shell](/assets/images/F1/RevolveConeExtrudeCutSketch.PNG)| ![Cut frustum shell after circular patterning](/assets/images/F1/CutCone.PNG)
 
 I still had concerns about the assembly collapsing under strain, so I decided to make one more support in the middle of the cone using the "loft" feature to build a mini-frustum. The dimensions of this part are also a little arbitrary, since I didn't have a good rationale for a calculation. The loft operation itself is made of two circles on different sketch planes, along with a line connecting them as a guide curve:
 |Support Frustum (Loft Operation) | Full Final Product |
-:---: | :--: 
+:---: | :---: 
 | ![Isometric view of the support after the loft operation](/assets/images/F1/ConeLoftSupport.PNG)| ![Final Conic Endcap](/assets/images/F1/FinalEndSupport.PNG)
 
 ## Assembly!
