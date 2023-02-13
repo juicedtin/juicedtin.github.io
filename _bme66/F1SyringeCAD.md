@@ -14,6 +14,7 @@ sidebar:
   - [Tube Shell](#tube-shell)
   - [Conic Endcap](#conic-endcap)
 - [Assembly!](#assembly)
+- [Summary (Assignment Requirements)](#summary-assignment-requirements)
 
 ## Initial Goals
 In my research at the Kaplan Lab, I work on fabricating gel-spun catheters made of _Bombyx mori_ silk. The solution that I use is quite viscous, but I have to extrude it through a syringe onto a rotating mandrel - so any bubbles that get trapped in the solution presents issues with heterogeneity of the final fabrication. I usually remove these bubbles by spinning down the solution via centrifugation, but all the centrifuges I've used are constructed for 50 mL Falcon tubes rather than 3 mL syringes. Thus, I thought I would use this CAD assignment as a excuse to 3D print a scaffold that could hold my syringe in place during the centrifuging process.
@@ -66,7 +67,7 @@ In the Front plane, I sketched out this parallelogram-ish triangular shape:
 ![Sketch of the cutting shape as a pattern](/assets/images//F1/Mesh%20Pattern%20Sketch.png) that I then extruded into an extrude cut on the cylindrical surface of my shell. To make sure that I could get even spacing, I did a bit of math to dimension my pattern such that 7 repetitions of the pattern would perfectly space the patterns across the cylinder. Using the circpattern tool, I pattnered the parallleogram across the face of the cylinder, and then I used the linear pattern with a 4 mm offset (to preserve the 2 mm margins at the top and bottom of the cylinder) to extend this pattern down the shell. At the end, I had something like this:
 
 | Initial Extrude Cut | Final Shell Pattern |
-|:---: | :---:|
+| :---: | :---: |
 |![Extrude cut of the parallelogram into the cylinder](/assets/images/F1/CircPattern%20(After%20ExtrudeCut).png) | ![Final patterned tubular shell with triangular cutouts](/assets/images/F1/LinCirc%20Pattern.png) |
 
 To put a place for the endcap I'm about to make, I also closed off the bottom of the cylinder with a 2mm cap:
@@ -80,12 +81,12 @@ First off, I created a "frustum-shell" that was designed to mesh with the origin
 
 To do the similar "weight-cutting" mechanism as previous, I decided to cut a pattern similar to the cylindrical shell, using the same mechanism:
 |Initial Cutting Pattern Sketch| Extrude Cut & 3X Circular Patterning |
-:---: | :---: 
+| :---: | :---: |
 | ![Sketch of the cutting pattern for frustum shell](/assets/images/F1/RevolveConeExtrudeCutSketch.PNG)| ![Cut frustum shell after circular patterning](/assets/images/F1/CutCone.PNG)
 
 I still had concerns about the assembly collapsing under strain, so I decided to make one more support in the middle of the cone using the "loft" feature to build a mini-frustum. The dimensions of this part are also a little arbitrary, since I didn't have a good rationale for a calculation. The loft operation itself is made of two circles on different sketch planes, along with a line connecting them as a guide curve:
 |Support Frustum (Loft Operation) | Full Final Product |
-:---: | :--: 
+|:---: | :---:| 
 | ![Isometric view of the support after the loft operation](/assets/images/F1/ConeLoftSupport.PNG)| ![Final Conic Endcap](/assets/images/F1/FinalEndSupport.PNG)
 
 ## Assembly!
