@@ -1,0 +1,2 @@
+OUTLINE
+1) Cut a random square + etching + raster to take a look at how each comes out on acrylic and to ID kerf. Came out really well (could have just submitted this haha, but I wanted to make something cooler), so move onto step 2: CAD
