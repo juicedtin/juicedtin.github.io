@@ -36,7 +36,7 @@ I send this print into Ender - but I realized that I made a mistake when it came
 |:-----:|:-----:| :-----: |
 ![First few deposited layers](/assets/images/F2/InitLayers.jpg) | ![Finished print on the printbed before removal](/assets/images/F2/FinishedPrintbed.jpg) | ![Removed print before removal of supports](/assets/images/F2/RemovedWithSupports.jpg)
 
-<img src = "../assets/images/F2/PrintGif.gif?raw=true" align="right" alt="GIF of printing process approx. 75% completion">
+<img src="../assets/images/F2/PrintGif.gif?raw=true" align="right" alt="GIF of printing process approx. 75% completion">
 And, because GIFs are cool, I also took a video of the printing processs to document how the infill (gyroid) and perimeter settings ended up printing (right).
 
 ## Summary (Assignment Requirements) 
