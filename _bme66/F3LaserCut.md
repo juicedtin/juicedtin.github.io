@@ -11,6 +11,7 @@ sidebar:
 - [Pattern and Kerf](#pattern-and-kerf-nolop)
 - [SolidWorks Sketch](#solidworks-sketch)
 - [Wood TestRun](#wood-testrun)
+- [Bray and Acrylic](#bray-acrylic)
 
 ## Introductions
 Laser cutting is great for making gifts, so I figured I'd make a gift for one of my friends in the form of a pencil holder/cup/whatchamacallit. I also thought that making something like this would be a good way to get into 3D rapid prototyping via laser cutting, since 2D machining is a little easier on harder materials like acrylic and metal if I wanted to use the waterjet, etc. It's also nice that it's much easier to print patterns, and Illustrator has an easy "image trace" function that let me yoink paths and images from random logos and icons I found online. 
@@ -55,9 +56,14 @@ Looks like Lilac got a little mangled in the engraving - bitmap doesn't translat
 The total height of the square was 0.38 mm less than predicted - thus, since the kerf is equally split across the cutting line, the full kerf is `0.38mm`. However, I'm only offsetting my lines in Illustrator to one side - so the offset amount is `0.195 mm`, which checks out to be almost exactly the same as acrylic (interesting, I thought it would be slightly wider).
 
 Putting everything into Illustrator (all 5 faces and the patterns, along with some etched frames), I use the Offset Path tool to push out all of my current lines by 0.195 mm to get this as my final cut that I sent into Nolop. Note that I used image trace to get the icons from my original images into a grayscale vector form, which gave me: 
-![Final Illustrator Cut File](/assets/images/F3/BoxFaces%20WoodK.png)
-After cutting, I got something like this:
 
-### Bonding the Box
-To bond the testrun, I used wood glue and some clamps
+![Final Illustrator Cut File](/assets/images/F3/BoxFaces%20WoodK.png)
+and after cutting:
+![Cut output from Nolop](/assets/images/F3/BoxfaceWoodTest.jpg)
+
+Issues here - although I think I was fortunate that the scale transferred between the original Illustrator files, I think I should have been more carefeul with checking the scale, since the units did change halfway through and I'm surprised that it came out as well as it did. Also, I printed the engravings/rastering upside down. Whoops! However, I verified that my kerf compensation was correct, as all the tabs fit into their slots tightly.
+
+Considering that I flipped the images, I opted to not bond these togehter and wait until the actual Bray run. 
+
+## Bray, Acrylic
 
