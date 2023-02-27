@@ -32,10 +32,11 @@ To make sure I'm not going insane when it comes to matching tabs and slots, I de
 
 ![Full SolidWorks tab-box sketch without compensation for kerf](/assets/images/F3/SW%20Box3D.PNG)
 
-I exported these to DXFs using SolidWorks (making sure to specify the plane I was exporting to): 
+I exported these to DXFs using SolidWorks (making sure to specify the plane I was exporting to):
+
 | Base DXF |  North/South Face DXFs | East/West Face DXFs |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-<img src="../assets/images/F3/BoxBaseNKDXF.png" alt ="Vector DXF of the box base" width = 300> | <img src="../assets/images/F3/BoxFaceNSNKDXF.png" alt ="Vector DXF of the north and south box faces" width = 300> |<img src="../assets/images/F3/BoxFaceEWNKDXF.png" alt ="Vector DXF of the box base" width = 300> |
+<img src="../assets/images/F3/BoxBaseNKDXF.png" alt ="Vector DXF of the box base" width = 300> | <img src="../assets/images/F3/BoxFaceNSNKDXF.png" alt ="Vector DXF of the north and south box faces" width = 300> | <img src="../assets/images/F3/BoxFaceEWNKDXF.png" alt ="Vector DXF of the box base" width = 300> 
 
 And now I have my Illustrator files, ready for some cool designs to be plastered on them via image trace!
 
