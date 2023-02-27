@@ -21,7 +21,7 @@ When I first started working on this project, I wasn't sure if I would be able t
 
 | Illustrator 2D Vector Drawing |  Cut Product |
 |:-------------------------:|:-------------------------:|
-<img src="../assets/images/F3/Testrun.png" alt ="Illustrator vector image of the laser cut test run" width = 350> | ![Full laser cut output on frosted acrylic](/assets/images/F3/TestrunCut.png)
+<img src="../assets/images/F3/Testrun.png" alt ="Illustrator vector image of the laser cut test run" width = 350> | ![Full laser cut output on frosted acrylic](/assets/images/F3/TestRunCut.png)
 
 Although this wasn't that useful in the end, I did measure out a kerf of approximately `0.195mm` that might be useful for me or others who wish to cut on the Nolop machine later on. 
 
