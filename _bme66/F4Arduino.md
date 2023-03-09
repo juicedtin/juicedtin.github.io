@@ -19,7 +19,7 @@ Tasked with making _anything_ with an ELEGOO Super Starter Kit, I did some Reddi
 
 After some Googling, I realized that it's actually possible to completely simulate the circuit and Arduino module without ever building everything (which should probably save me a lot of time). I used [TinkerCad](https://www.tinkercad.com/dashboard) to build and simulate my code. This is the initial setup with labeled pins:
 
-![Initial schematic of pinouts and connections](INSERT PATH HERE)
+![Initial schematic of pinouts and connections](/assets/images/F4/CircuitSchematic.png)
 
 To summarize, I essentially created a power and ground channel on the breadboard to support anything else I might want to add to the circuit later. I connected the ultrasonic and servo power/ground pins to these channels, and fed the power channel with the 5V power output from the UNO R3 and the GND pin as demonstrated. I also hooked up the signal line of the servo to pin 3, the trigger line of the ultrasonic to pin 5, and the echo line of the ultrasonic to pin 6. Relatively straightforward!
 
