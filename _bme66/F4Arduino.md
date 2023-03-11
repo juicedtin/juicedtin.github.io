@@ -26,20 +26,17 @@ To summarize, I essentially created a power and ground channel on the breadboard
 As for the code, it's relatively short, so I'll attach it here:
 ```
 #include <Servo.h>
-Servo uSweeper; //Instantiate servo
+Servo uSweeper;  //Instantiate servo
 
 //Create variables for all pins
 int USEchoPin = 5;
 int USTrigPin = 6;
 int servoPin = 3;
-//Create variable to store all of the sonar data
-long sonarArray[2][180/5];
 
-void setup()
-{
-  uSweeper.attach(servoPin); //Attach DIGPin3 to servo object
-  Serial.begin(9600); //Serial for debugging
-  pinMode(USTrigPin, OUTPUT); //Set pinout modes for US
+void setup() {
+  uSweeper.attach(servoPin);   //Attach DIGPin3 to servo object
+  Serial.begin(9600);          //Serial for debugging
+  pinMode(USTrigPin, OUTPUT);  //Set pinout modes for US
   pinMode(USEchoPin, INPUT);
   pinMode(LED_BUILTIN, OUTPUT);
 }
@@ -49,43 +46,41 @@ void setup()
 long usDist(int trigPin, int echoPin) {
   //Send out US pulse (triggered by HIGH for 10 useconds)
   digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(5);
   digitalWrite(trigPin, LOW);
-  
   long waveDur = pulseIn(echoPin, HIGH);
-  long dist = waveDur*0.343/2;
+  long dist = waveDur / 29 / 2;
+  delay(100);
   return dist;
 }
 
-void loop()
-{
-  int iterPos = 0;
-  uSweeper.write(0); //Reset servo
-  delayMicroseconds(15);
-  Serial.println("Begin sonar loop");
-  for (int ang = 0; ang < 180; ang+=5) {
-    sonarArray[0][iterPos] = (long) ang; //Sonar angle input
-  	uSweeper.write(ang); //Turn servo to this angle
-    delayMicroseconds(15); //Wait for servo to move
-    long angleDist = usDist(USTrigPin, USEchoPin); //Get distance
-    sonarArray[1][iterPos] = angleDist; //And input it into sonar array
+void loop() {
+  for (int ang = 0; ang < 180; ang += 5) {
+    //uSweeper.write(ang); //Turn servo to this angle
+    delayMicroseconds(15);                          //Wait for servo to move
+    long angleDist = usDist(USTrigPin, USEchoPin);  //Get distance
+    Serial.print(angleDist);
+    Serial.write(13);
+    Serial.write(10);
+    delay(250);
   }
   //Signify completion of one sonar loop
-  
+
   digitalWrite(LED_BUILTIN, HIGH);
-  //delayMicroseconds(200);
+  delayMicroseconds(200);
   digitalWrite(LED_BUILTIN, LOW);
-  Serial.println("End sonar loop");
   //Print array
-  for (long element:sonarArray[1]) {
-    Serial.print(element + " ");
-  }
-}  
+}
   ```
 
 The comments provide a bit more detail as to what each line is doing - but overall, the code essentially does an ultrasonic sensor read (trigger and echo), then records this distance in a "sonar array". It then advances the servo motor forwards by about 5 degrees, and does it again. Repeat until 180 degrees (the range of the servo) has been achieved, blink an LED and do some serial prints to signify that we're done with a loop, then repeat! TinkerCad also lets you simulate your code, which is really helpful to be able to debug without messing with the actual Arduino parts. I still had to figure out a way to get the data onto an actual "graph" such that it's readable, but I wanted to build and test this initial prototype, as graphing the data (probably by reading the serial port) is mostly software-based. 
 
 ## Prototyping
 
+The circuit didn't come out nearly as cleanly as the schematic mentioned, but wiring everything up creates something like this:
+
+![Raw Wired Circuit](/assets/images/F4/RawCircuit.jpg)
+
+Attaching the software and hooking up 
