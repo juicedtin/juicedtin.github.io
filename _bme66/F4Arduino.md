@@ -138,8 +138,15 @@ It turns out that MATLAB will continue to read data from the serial port as long
 
 ![Initial polar plot of distance measurements](./../assets/images/F4/SonarTestPolar.png)
 
-Looks pretty awesome! I put a book in front of the sensor, so that's what the line of dots reds. There's a few issues with false long-distance reads, probably due to a mismatch between trigger and echo positions and respective obstacles. Not bad!
+Looks pretty awesome! I put the box containing the starter kit in front of the sensor, so that's what the line of dots reds. There's a few issues with false long-distance reads, probably due to a mismatch between trigger and echo positions and respective obstacles. Not bad!
 
 ## Summary (Assignment Requirements)
 
+In summary, after scouring Reddit and thinking about light-sensitive motor pointers or humidity and temperature sensors or flash memory, etc. I decided to go with a servo and ultrasonic sensor to make a sonar module! The servo allows for degree-based pointing of the ultrasonic sensor, which takes distance measurements - all of this gets sent back through the COM serial port to a MATLAB program that plots it on a polar plot. 
+
+Setting up the MATLAB program and debugging was difficult, since I wasn't entirely sure how MATLAB reads serial input until I fiddled with the code myself for a while. While playing with the Ardunio, I learned a lot about pinouts and wiring connections (also, where the built-in LED was!). 
+
+Luckily, I didn't really need any datasheets -  the Arduino documentation provided all the pinouts I needed for the [servo motor](https://docs.arduino.cc/learn/electronics/servo-motors) and the [ultrasonic sensor](https://docs.arduino.cc/built-in-examples/sensors/Ping). I also used the [MATLAB Serial Input Example](https://www.mathworks.com/help/instrument/read-streaming-data-from-arduino.html) and edited the example code to make the polarplot. [TinkerCad](tinkercad.com) was how I made the schematic and wiring diagrams above, and simulated the circuit to make sure all my connections were correct.
+
+Although I do admit that building a Roomba with this ultrasonic sonar module would be cool, it's not exceptionally relevant to my daily life. One of the things I wanted to build (but didn't have the components for) is an automated light-switcher: a simple circuit to turn on my desklamp when I turn off my lights. In essence, I think anything that requires a simple input-comparison/calculation-output to automate random things could be actuated by an Arduino (turning on lights when you open a door, unpacking a backpack/sorting objects when you sit down, etc.).
 
