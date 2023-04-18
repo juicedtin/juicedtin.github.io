@@ -9,6 +9,7 @@ sidebar:
 ---
 - [Introductions](#introductions)
 - [CAD-ing a Two-Piece Mold](#cad-ing-a-two-piece-mold)
+- [Molding](#moldingcasting)
 - [Summary](#summary-assignment-requirements)
 
 ## Introductions
@@ -22,5 +23,9 @@ Note the "blocks" on the top model that are designed to be air holes. After this
 ![Solidworks import and extrude of the Aperture Science logo](/assets/images/F5/ApertureExtrude.png)
 
 I 3D printed these using PLA filament
-![3D printed keycap molds](/assets/images/F5/3DPrintMolds) - now onto molding!
+![3D printed keycap molds](/assets/images/F5/3DPrintMolds.jpg) - now onto molding!
 
+## Molding/Casting
+
+I used a two-component platinum-catalyzed silicone for the creation of the molds (EcoFlex) - approx. 10 mL (split into 5 mL per component) were used for each mold, and cured overnight. I also sprayed mold-release agent on the PLA molds, although I think it was unnecessary in the end. This created translucent molds that I can then cast with polyurethane!
+![Silicone molds after casting from the 3D printed PLA molds](/assets/images/F5/SiliconeMolds.jpg)
