@@ -31,3 +31,5 @@ To create silicone molds that I would later cast polyurethane into, I utilized [
 
 I then cast polyurethane (liquid plastic [SmoothCast 305](https://www.smooth-on.com/products/smooth-cast-305/)) into these silicone molds, and left them to cure overnight into:
 ![Polyurethane cast into the silicone molds](/assets/images/F5/PolyurethaneCast.jpg)
+
+It didn't come out super well, but overall not horrible - looks like there were a few air bubbles that I would probably only be able to get out if I drew vacuum. I think that the vents were also too low, and thus too much polyurethane leaked out of the mold and didn't make the keycap tall enough - all things to consider for the next iteration!
