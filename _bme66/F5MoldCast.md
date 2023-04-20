@@ -29,3 +29,5 @@ I 3D printed these using PLA filament
 To create silicone molds that I would later cast polyurethane into, I utilized [Ecoflex 00-30 Pt-cured silicone](https://www.smooth-on.com/products/ecoflex-00-30/), as it usually plays well with polyurethane, along with mold-releasing agent. After combining approx. 10 mL (5 mL A and B) per "side" of the mold with two syringes and curing overnight, I found that most of the features translated well:
 ![Silicone molds after casting](/assets/images/F5/SiliconeCastMolds.jpg)
 
+I then cast polyurethane (liquid plastic [SmoothCast 305](https://www.smooth-on.com/products/smooth-cast-305/)) into these silicone molds, and left them to cure overnight into:
+![Polyurethane cast into the silicone molds](/assets/images/F5/PolyurethaneCast.jpg)
