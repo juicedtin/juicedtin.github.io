@@ -1,7 +1,7 @@
 ---
 title: "F5 &#124;&#124; Molding and Casting - Hands, Keycaps"
 excerpt: "Trying to mold and cast a keycap (and a hand)!"
-permalink: /bme66/F2
+permalink: /bme66/F5
 classes: wide
 sidebar:
 - title: Relevant Topics
