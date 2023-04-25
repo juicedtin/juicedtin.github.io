@@ -10,6 +10,7 @@ sidebar:
 - [Introductions](#introductions)
 - [CAD-ing a Two-Piece Mold](#cad-ing-a-two-piece-mold)
 - [Molding/Casting](#moldingcasting)
+- [One-Piece Molding/Casting](#one-piece-moldingcasting)
 
 ## Introductions
 Molding and casting, although a pretty old and unpopular technique in the age of 3D printers and laser cutters, is still quite good for mass-producing a certain part or mimicking a complex shape. So, after a bunch of Reddit searching, we decided to mold two different objects - a one-piece mold of a human hand, and a two-piece mold to create a keycap for a mechanical keyboard! I took point on the two-piece mold, so I'll cover that first.
@@ -33,3 +34,6 @@ I then cast polyurethane (liquid plastic [SmoothCast 305](https://www.smooth-on.
 ![Polyurethane cast into the silicone molds](/assets/images/F5/PolyurethaneCast.jpg)
 
 It didn't come out super well, but overall not horrible - looks like there were a few air bubbles that I would probably only be able to get out if I drew vacuum. I think that the vents were also too low, and thus too much polyurethane leaked out of the mold and didn't make the keycap tall enough - all things to consider for the next iteration!
+
+## One-Piece Molding/Casting
+The majority of this documentation is explained in more detail in [Jake Blum's documentation](https://sites.tufts.edu/bme66jb/molding-casting/). To briefly summarize, Jake used the same Pt-catalyzed silicone for the overarching mold, with a pen inserted as the molding object of choice. An 1:1 mixture of Alja-Safe and Water was used as the casting material, although the silicone mold did not capture minor details of the pen well. Jake goes into more detail with image documentation of the process - see the link above!
