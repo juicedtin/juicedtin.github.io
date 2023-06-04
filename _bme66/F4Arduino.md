@@ -4,9 +4,10 @@ excerpt: "Figuring out how to make an 180-degree sonar module with an Arduino Ki
 permalink: /bme66/F4
 classes: wide
 sidebar:
-- title: Relevant Topics
-  text:  Arduino, C++, Ultrasonic Sensors, Servo Motors
+  - title: Relevant Topics
+    text: Arduino, C++, Ultrasonic Sensors, Servo Motors
 ---
+
 - [Introductions](#introductions)
 - [Code and Simulation](#code-and-simulation)
 - [Prototyping](#prototyping)
@@ -15,7 +16,7 @@ sidebar:
 
 ## Introductions
 
-Tasked with making _anything_ with an ELEGOO Super Starter Kit, I did some Reddit-diving. A lot of people have made a lot of interesting things: I was thinking about a light-sensitive motor pointer, or maybe something with humidity and temperature. However, I wanted to integrate multiple sensors together, so I got the idea to make a sonar module! 
+Tasked with making _anything_ with an ELEGOO Super Starter Kit, I did some Reddit-diving. A lot of people have made a lot of interesting things: I was thinking about a light-sensitive motor pointer, or maybe something with humidity and temperature. However, I wanted to integrate multiple sensors together, so I got the idea to make a sonar module!
 
 Essentially, I can slap an ultrasonic sensor on a a servo, rotate it every degree or so (I'll probably have to tweak the resolution) and take distance measurements. Then I can port this into a polar plotter and make a 180-degree "distance map" that should roughly approximate the surroundings of my device. To make something like this, I obviously needed actuation control and distance control - I used the servo here to execute exact angle measurements, and the ultrasonic sensor to measure distance.
 
@@ -29,6 +30,7 @@ After some Googling, I realized that it's actually possible to completely simula
 To summarize, I essentially created a power and ground channel on the breadboard to support anything else I might want to add to the circuit later. I connected the ultrasonic and servo power/ground pins to these channels, and fed the power channel with the 5V power output from the UNO R3 and the GND pin as demonstrated. I also hooked up the signal line of the servo to pin 3, the trigger line of the ultrasonic to pin 5, and the echo line of the ultrasonic to pin 6. Relatively straightforward!
 
 As for the code, it's relatively short, so I'll attach it here:
+
 ```
 #include <Servo.h>
 Servo uSweeper;  //Instantiate servo
@@ -78,11 +80,11 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);
   //Print array
 }
-  ```
+```
 
-The comments provide a bit more detail as to what each line is doing - but overall, the code essentially does an ultrasonic sensor read, then prints this distance into the Serial out (which I'll feed into the serial port). It then advances the servo motor forwards by 1 degree, and does it again. Repeat until 180 degrees has been achieved, blink an LED to signify that we're done with a loop, then repeat! 
+The comments provide a bit more detail as to what each line is doing - but overall, the code essentially does an ultrasonic sensor read, then prints this distance into the Serial out (which I'll feed into the serial port). It then advances the servo motor forwards by 1 degree, and does it again. Repeat until 180 degrees has been achieved, blink an LED to signify that we're done with a loop, then repeat!
 
-TinkerCad also lets you simulate your code, which is really helpful to be able to debug without messing with the actual Arduino parts. I still had to figure out a way to get the data onto an actual "graph" such that it's readable, but I wanted to build and test this initial prototype, as graphing the data (probably by reading the serial port) is mostly software-based. 
+TinkerCad also lets you simulate your code, which is really helpful to be able to debug without messing with the actual Arduino parts. I still had to figure out a way to get the data onto an actual "graph" such that it's readable, but I wanted to build and test this initial prototype, as graphing the data (probably by reading the serial port) is mostly software-based.
 
 ## Prototyping
 
@@ -92,10 +94,12 @@ The circuit didn't come out nearly as cleanly as the schematic mentioned, but wi
 
 And when I attach the servo to the motor with copious amounts of tape and run the code...
 <img src="../assets/images/F4/ServoTest.gif" alt = "Servo testing video showing 5-degree steps"/>
-From this, I really learned the importance of proper breadboard and circuit management - it was really easy to get pins mixed up, and I found wiring `VCC` and `GND` to the vertical breadboard rails simplified wiring by a lot. 
+From this, I really learned the importance of proper breadboard and circuit management - it was really easy to get pins mixed up, and I found wiring `VCC` and `GND` to the vertical breadboard rails simplified wiring by a lot.
+
 ## MATLAB Plotting
 
 Turns out, the MATLAB plotting was the hardest part. I ended up taking an example from one of their documentation examples for this part. Code follows:
+
 ```
 arduino = serialport("COM3", 9600);
 configureTerminator(arduino, "CR/LF");
@@ -106,7 +110,7 @@ configureCallback(arduino,"terminator",@readSonar);
 function readSonar(src, ~)
 
 % Read the ASCII data from the serialport object, add the first angle
-% value. 
+% value.
 data = readline(src);
 src.UserData.Angle(1) = 0;
 
@@ -128,13 +132,14 @@ if src.UserData.Angle(end) == 180
 end
 end
 ```
-Again, comments are relatively self-explanatory. I had a lot of issues trying to set this up initially, since it turns out that MATLAB serial reads operate a lot differently that I was expecting. There's actually no `while` loop present here - once you run the code, the `configureCallback` governs the entire function: 
+
+Again, comments are relatively self-explanatory. I had a lot of issues trying to set this up initially, since it turns out that MATLAB serial reads operate a lot differently that I was expecting. There's actually no `while` loop present here - once you run the code, the `configureCallback` governs the entire function:
 
 It turns out that MATLAB will continue to read data from the serial port as long as `terminator` is configured as such. Turning this to `off` stops the serial read.
 
 {: .notice}
 
- Also, don't forget to convert degrees to radians (I didn't initially), since the servo operates on degrees, but MATLAB `polarscatter` operates on radians. Put this all together, and you get:
+Also, don't forget to convert degrees to radians (I didn't initially), since the servo operates on degrees, but MATLAB `polarscatter` operates on radians. Put this all together, and you get:
 
 ![Initial polar plot of distance measurements](./../assets/images/F4/SonarTestPolar.png)
 
@@ -142,11 +147,10 @@ Looks pretty awesome! I put the box containing the starter kit in front of the s
 
 ## Summary (Assignment Requirements)
 
-In summary, after scouring Reddit and thinking about light-sensitive motor pointers or humidity and temperature sensors or flash memory, etc. I decided to go with a servo and ultrasonic sensor to make a sonar module! The servo allows for degree-based pointing of the ultrasonic sensor, which takes distance measurements - all of this gets sent back through the COM serial port to a MATLAB program that plots it on a polar plot. 
+In summary, after scouring Reddit and thinking about light-sensitive motor pointers or humidity and temperature sensors or flash memory, etc. I decided to go with a servo and ultrasonic sensor to make a sonar module! The servo allows for degree-based pointing of the ultrasonic sensor, which takes distance measurements - all of this gets sent back through the COM serial port to a MATLAB program that plots it on a polar plot.
 
-Setting up the MATLAB program and debugging was difficult, since I wasn't entirely sure how MATLAB reads serial input until I fiddled with the code myself for a while. While playing with the Ardunio, I learned a lot about pinouts and wiring connections (also, where the built-in LED was!). 
+Setting up the MATLAB program and debugging was difficult, since I wasn't entirely sure how MATLAB reads serial input until I fiddled with the code myself for a while. While playing with the Ardunio, I learned a lot about pinouts and wiring connections (also, where the built-in LED was!).
 
-Luckily, I didn't really need any datasheets -  the Arduino documentation provided all the pinouts I needed for the [servo motor](https://docs.arduino.cc/learn/electronics/servo-motors) and the [ultrasonic sensor](https://docs.arduino.cc/built-in-examples/sensors/Ping). I also used the [MATLAB Serial Input Example](https://www.mathworks.com/help/instrument/read-streaming-data-from-arduino.html) and edited the example code to make the polarplot. [TinkerCad](tinkercad.com) was how I made the schematic and wiring diagrams above, and simulated the circuit to make sure all my connections were correct.
+Luckily, I didn't really need any datasheets - the Arduino documentation provided all the pinouts I needed for the [servo motor](https://docs.arduino.cc/learn/electronics/servo-motors) and the [ultrasonic sensor](https://docs.arduino.cc/built-in-examples/sensors/Ping). I also used the [MATLAB Serial Input Example](https://www.mathworks.com/help/instrument/read-streaming-data-from-arduino.html) and edited the example code to make the polarplot. [TinkerCad](tinkercad.com) was how I made the schematic and wiring diagrams above, and simulated the circuit to make sure all my connections were correct.
 
 Although I do admit that building a Roomba with this ultrasonic sonar module would be cool, it's not exceptionally relevant to my daily life. One of the things I wanted to build (but didn't have the components for) is an automated light-switcher: a simple circuit to turn on my desklamp when I turn off my lights. In essence, I think anything that requires a simple input-comparison/calculation-output to automate random things could be actuated by an Arduino (turning on lights when you open a door, unpacking a backpack/sorting objects when you sit down, etc.).
-
